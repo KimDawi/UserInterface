@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackSubmission">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0585B6">
+
+        <!-- Queue Status Text -->
+        <TextView
+            android:id="@+id/queueStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUEUE STATUS"
+            android:textColor="#DFD9D9"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true" />
+
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:layout_below="@id/queueStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_1" />
+
+        <!-- Feedback Label -->
+        <TextView
+            android:id="@+id/feedbackLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="FEEDBACK"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!-- Rating Bar (Stars) -->
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feedbackLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="4"
+            android:theme="@style/Widget.AppCompat.RatingBar.Indicator" />
+
+        <!-- Experience Text -->
+        <TextView
+            android:id="@+id/experienceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="HOW WAS YOUR EXPERIENCE?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Feedback Text Area -->
+        <EditText
+            android:id="@+id/feedbackTextArea"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/experienceText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#E4DDDD"
+            android:gravity="top|start"
+            android:hint=".........."
+            android:padding="10dp"
+            android:textColor="#25383C"
+            android:textColorHint="@color/black" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feedbackTextArea"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

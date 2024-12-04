@@ -1,14 +1,20 @@
 package com.example.userinterface;
 
+import android.content.Intent;
 import android.os.Bundle;
-
+import android.view.View;
+import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+
+    private Button signupButton;
+    private Button loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +26,22 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        signupButton = (Button) findViewById(R.id.signupButton);
+        signupButton.setOnClickListener(this);
+        loginButton = (Button) findViewById(R.id.LoginButton);
+        loginButton.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.signupButton) {
+            Intent intent = new Intent(this, SignUp.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.LoginButton) {
+            Intent intent = new Intent(this, JoinQueue.class);
+            startActivity(intent);
+        }
     }
 }

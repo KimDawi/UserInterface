@@ -11,37 +11,30 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class CheckInAndReschedule extends AppCompatActivity implements View.OnClickListener {
+public class ProceedToCounter extends AppCompatActivity implements View.OnClickListener {
 
-    private Button checkInButton;
-    private Button rescheduleButton;
+
+    private Button feedbackButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_check_in_and_reschedule);
+        setContentView(R.layout.activity_proceed_to_counter);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        checkInButton = (Button) findViewById(R.id.checkInButton);
-        checkInButton.setOnClickListener(this);
-        rescheduleButton = (Button) findViewById(R.id.rescheduleButton);
-        rescheduleButton.setOnClickListener(this);
-
+        feedbackButton = (Button) findViewById(R.id.feedbackButton);
+        feedbackButton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.checkInButton) {
-            Intent intent = new Intent(this, ProceedToCounter.class);
-            startActivity(intent);
-
-        } else if (v.getId() == R.id.rescheduleButton) {
-            Intent intent = new Intent(this, QueueSubmission.class);
+        if (v.getId() == R.id.feedbackButton) {
+            Intent intent = new Intent(this, FeedbackSubmission.class);
             startActivity(intent);
 
         }

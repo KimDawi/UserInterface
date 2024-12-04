@@ -4,10 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:orientation="vertical"
+    android:background="#F5F5F5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="#F5F5F5"-->
+<!--    android:padding="16dp"-->
+<!--    android:gravity="center">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+
+        android:layout_marginBottom="55dp"
+        android:src="@drawable/img"/>
 
     <!-- Welcome Text -->
     <TextView
@@ -16,6 +42,7 @@
         android:layout_height="wrap_content"
         android:text="WELCOME BACK"
         android:textSize="24sp"
+        android:layout_gravity="center"
         android:textStyle="bold"
         android:textColor="#000000"
         android:layout_marginBottom="9dp" />
@@ -28,27 +55,27 @@
         android:text="Enter Your credential to login"
         android:textSize="16sp"
         android:textColor="#000000"
+        android:layout_gravity="center"
         android:layout_marginBottom="24dp" />
 
     <!-- Username EditText -->
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:background="@drawable/edittext_bkg"
-        android:drawableLeft="@drawable/email"
-        android:drawablePadding="8dp"
-        android:hint="Username"
-        android:padding="8dp"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="263dp" />
 
 
-    <!-- Password EditText -->
+        <!-- Password EditText -->
 
     <!-- Login Button -->
-    <EditText
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_bkg"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="8dp"
+            android:hint="Username"
+            android:padding="8dp" />
+
+        <EditText
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
@@ -62,27 +89,28 @@
         android:background="@drawable/edittext_bkg"/>
 
 
-    <Button
-        android:id="@+id/LoginButton"
-        android:layout_width="110dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="26dp"
-        android:backgroundTint="#000080"
-        android:minWidth="120dp"
-        android:padding="12dp"
-        android:text="Login"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="74dp" />
+        <!-- SignUp Section -->
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="26dp"
+            android:backgroundTint="#000080"
+            android:minWidth="120dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
-    <!-- SignUp Section -->
-    <LinearLayout
+        <LinearLayout
         android:layout_width="283dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
         android:gravity="center"
+            android:layout_gravity="center"
         android:orientation="horizontal">
 
 
@@ -108,5 +136,6 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
 
+    </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
