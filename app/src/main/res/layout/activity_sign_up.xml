@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDEDED"
+        android:padding="16dp">
+
+        <!-- Main content container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp">
+
+            <!-- Sign Up Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Subtitle Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create your Account"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="32dp" />
+
+            <!-- First Name Input -->
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:id="@+id/firstname"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="First Name"
+                android:drawablePadding="8dp"
+                android:background="@drawable/edittext_bkg"/>
+
+            <!-- Last Name Input -->
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:id="@+id/lastname"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:hint="Last Name"
+                android:drawablePadding="8dp"
+                android:background="@drawable/edittext_bkg"/>
+
+            <!-- Email Input -->
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:id="@+id/signup_email"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="8dp"
+                android:background="@drawable/edittext_bkg"/>
+
+            <!-- Password Input -->
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:id="@+id/signup_password"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="8dp"
+                android:background="@drawable/edittext_bkg"/>
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:layout_marginTop="15dp"
+                android:text="SignUp"
+                android:backgroundTint="#000080"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:minWidth="120dp"
+                android:layout_marginBottom="16dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="32dp">
+
+                <TextView
+                    android:id="@+id/noAccountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an Account yet?"
+                    android:textSize="18sp"
+                    android:textColor="#666666"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/LoginButton"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
+                    android:text="LOGIN"
+                    android:textStyle="bold"
+                    android:backgroundTint="#000080"
+                    android:textColor="#FFFFFF"
+                    android:background="#6A5ACD"
+                    android:textAllCaps="false"
+                    android:paddingHorizontal="16dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

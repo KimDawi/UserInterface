@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QueueSubmission">
+
+    <!-- Header Section -->
+
+        <!-- Queue Status Text -->
+        <TextView
+            android:id="@+id/queue_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:text="QUEUE STATUS"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!-- Right Arrow Icon -->
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp" />
+
+
+    <!-- Joining the Queue Button -->
+    <Button
+        android:id="@+id/join_queue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#5EA1E2"
+        android:text="JOINING THE QUEUE"
+        android:textColor="#FFFFFF" />
+
+    <!-- Input Fields -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/join_queue"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Name Field -->
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:hint="NAME:"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <!-- Contact Field -->
+        <EditText
+            android:id="@+id/contact_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:hint="CONTACT:"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="12dp" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:hint="EMAIL:"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:background="#FFFFFF"
+        android:text="SUBMIT"
+        android:textColor="#000000" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
