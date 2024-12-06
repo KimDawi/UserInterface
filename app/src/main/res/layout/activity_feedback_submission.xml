@@ -58,7 +58,7 @@
             android:numStars="5"
             android:stepSize="1"
             android:rating="4"
-            android:theme="@style/Widget.AppCompat.RatingBar.Indicator" />
+            android:theme="@style/Widget.AppCompat.RatingBar" />
 
         <!-- Experience Text -->
         <TextView

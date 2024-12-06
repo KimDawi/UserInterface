@@ -50,6 +50,7 @@
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:hint="First Name"
+                android:textColor="@color/black"
                 android:drawablePadding="8dp"
                 android:background="@drawable/edittext_bkg"/>
 
@@ -63,6 +64,7 @@
                 android:padding="8dp"
                 android:hint="Last Name"
                 android:drawablePadding="8dp"
+                android:textColor="@color/black"
                 android:background="@drawable/edittext_bkg"/>
 
             <!-- Email Input -->
@@ -73,6 +75,7 @@
                 android:id="@+id/signup_email"
                 android:layout_marginTop="15dp"
                 android:padding="8dp"
+                android:textColor="@color/black"
                 android:hint="Email"
                 android:drawableLeft="@drawable/email"
                 android:drawablePadding="8dp"
@@ -83,6 +86,7 @@
                 android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
                 android:id="@+id/signup_password"
                 android:layout_marginTop="15dp"
                 android:padding="8dp"
@@ -91,6 +95,19 @@
                 android:drawableLeft="@drawable/lock"
                 android:drawablePadding="8dp"
                 android:background="@drawable/edittext_bkg"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:id="@+id/contact"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:hint="Contact"
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"
+                android:background="@drawable/edittext_bkg"/>
+
 
             <!-- Sign Up Button -->
             <Button

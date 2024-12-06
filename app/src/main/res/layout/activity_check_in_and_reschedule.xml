@@ -58,15 +58,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp" />
         <!-- Buttons -->
-        <TextView
-            android:id="@+id/waitingTime"
-            android:layout_width="wrap_content"
-            android:layout_height="41dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:text="WAITING TIME IS 10 MIN"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="178dp"
