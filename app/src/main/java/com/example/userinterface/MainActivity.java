@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             String status = json_response.getString("status");
                             if (status.equals("success")) {
                                 Session.user_email = username.getText().toString();
+                                Session.rescheduled = "No";
                                 Intent intent = new Intent(MainActivity.this, JoinQueue.class);
                                 startActivity(intent);
                             } else {

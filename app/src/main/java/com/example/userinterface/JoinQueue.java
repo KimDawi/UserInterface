@@ -145,7 +145,7 @@ public class JoinQueue extends AppCompatActivity implements View.OnClickListener
                 Map<String, String> params = new HashMap<>();
 
 //                params.put("username", username.getText().toString());
-//                params.put("password", login_password.getText().toString());
+
 
                 return params;
             }
@@ -224,7 +224,7 @@ public class JoinQueue extends AppCompatActivity implements View.OnClickListener
                 Map<String, String> params = new HashMap<>();
 
                 params.put("email", Session.user_email);
-
+                params.put("rescheduled", Session.rescheduled);
                 return params;
             }
         };

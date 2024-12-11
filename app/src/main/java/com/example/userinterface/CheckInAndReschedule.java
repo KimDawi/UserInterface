@@ -160,6 +160,7 @@ public class CheckInAndReschedule extends AppCompatActivity implements View.OnCl
                             String status = jsonResponse.getString("status");
 
                             if (status.equals("success")) {
+                                Session.rescheduled = "Yes";
                                 Intent intent = new Intent(CheckInAndReschedule.this, JoinQueue.class);
                                 startActivity(intent);
                             } else {
